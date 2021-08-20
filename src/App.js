@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import Contador from './componentes/Contador';
+import Counter from './components/Counter';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <Contador></Contador>
+      <Header></Header>
+      <Counter></Counter>
     </div>
   );
 }
