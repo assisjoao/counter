@@ -2,12 +2,15 @@ import React from 'react';
 import './App.css';
 import Counter from './components/Counter';
 import Header from './components/Header';
+import {CounterProvider} from './CounterContext'
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Counter></Counter>
+      <CounterProvider>
+        <Header></Header>
+        <Counter></Counter>
+      </CounterProvider>
     </div>
   );
 }
